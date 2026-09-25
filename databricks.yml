@@ -1,0 +1,23 @@
+bundle:
+  name: uci_252_databricks_retail_lakehouse
+
+include:
+  - resources/*.yml
+
+variables:
+  catalog:
+    description: Unity Catalog catalog used by the project
+    default: retail_lakehouse
+  pipeline_schema:
+    description: Default schema used by the Lakeflow pipeline for metadata
+    default: pipeline_meta
+  landing_volume:
+    description: Root Unity Catalog volume path containing raw source folders
+    default: /Volumes/retail_lakehouse/landing/raw
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      root_path: ~/.bundle/${bundle.name}/${bundle.target}

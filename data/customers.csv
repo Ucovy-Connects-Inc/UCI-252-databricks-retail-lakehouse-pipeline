@@ -1,0 +1,7 @@
+customer_id,first_name,last_name,email,city,state,country,signup_date,updated_at
+1001,Aarav,Patel,aarav.patel@example.com,Chicago,IL,US,2025-01-10,2026-08-01 09:00:00
+1002,Emma,Johnson,emma.johnson@example.com,Dallas,TX,US,2025-02-15,2026-08-02 10:15:00
+1003,Liam,Smith,liam.smith@example.com,Seattle,WA,US,2025-03-12,2026-08-03 11:20:00
+1004,Olivia,Brown,olivia.brown@example.com,Atlanta,GA,US,2025-04-02,2026-08-04 12:25:00
+1005,Noah,Davis,noah.davis@example.com,Phoenix,AZ,US,2025-04-18,2026-08-05 13:30:00
+1006,Sophia,Wilson,sophia.wilson@example.com,Denver,CO,US,2025-05-09,2026-08-06 14:35:00
