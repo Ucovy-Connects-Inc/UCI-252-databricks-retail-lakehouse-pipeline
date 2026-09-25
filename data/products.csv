@@ -1,0 +1,7 @@
+product_id,product_name,category,brand,unit_price,updated_at
+2001,Wireless Headphones,Electronics,SonicWave,79.99,2026-08-01 08:00:00
+2002,Mechanical Keyboard,Electronics,KeyForge,109.5,2026-08-01 08:05:00
+2003,Running Shoes,Sports,StridePro,89.0,2026-08-01 08:10:00
+2004,Coffee Maker,Home,BrewMaster,64.75,2026-08-01 08:15:00
+2005,Backpack,Accessories,UrbanTrail,54.25,2026-08-01 08:20:00
+2006,Smart Watch,Electronics,PulseX,149.99,2026-08-01 08:25:00
