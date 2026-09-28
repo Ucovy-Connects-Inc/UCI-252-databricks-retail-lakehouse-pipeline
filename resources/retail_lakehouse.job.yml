@@ -1,0 +1,21 @@
+resources:
+  jobs:
+    retail_lakehouse_job:
+      name: "[${bundle.target}] UCI-252 Retail Lakehouse Orchestration"
+
+      tasks:
+        - task_key: refresh_retail_lakehouse
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.retail_lakehouse_pipeline.id}
+            full_refresh: false
+
+        - task_key: validate_pipeline_outputs
+          depends_on:
+            - task_key: refresh_retail_lakehouse
+          notebook_task:
+            notebook_path: ../src/notebooks/validate_outputs.py
+
+      schedule:
+        quartz_cron_expression: "0 0 6 * * ?"
+        timezone_id: "America/Chicago"
+        pause_status: PAUSED

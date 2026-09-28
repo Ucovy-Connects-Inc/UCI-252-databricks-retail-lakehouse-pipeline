@@ -1,0 +1,15 @@
+resources:
+  pipelines:
+    retail_lakehouse_pipeline:
+      name: "[${bundle.target}] UCI-252 Retail Lakehouse Pipeline"
+      catalog: ${var.catalog}
+      schema: ${var.pipeline_schema}
+      serverless: true
+      continuous: false
+      channel: CURRENT
+      libraries:
+        - file:
+            path: ../src/pipeline/retail_lakehouse.py
+      configuration:
+        retail.catalog: ${var.catalog}
+        retail.landing_volume: ${var.landing_volume}
